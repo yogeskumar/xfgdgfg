@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Digital Clock</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./clock.css" />
+  </head>
+  <body>
+    <div id="parent-container">
+      <div id="upper-container">
+        <div id="clock-logo">
+          <div id="logo"><i class="fas fa-clock"></i></div>
+          <div id="clock-text">CLOCK</div>
+        </div>
+        <div id="clock">
+          <div id="text-time">TIME</div>
+          <div id="hr">
+            <div id="thr">10</div>
+          </div>
+          <div id="colon">:</div>
+          <div id="min">
+            <div id="tmin">45</div>
+          </div>
+          <div id="colon">:</div>
+          <div id="sec">
+            <div id="tsec">01</div>
+          </div>
+          <div id="am-pm"><div id="inner-am-pm">AM</div></div>
+        </div>
+      </div>
+      <div id="lower-container">
+        <div id="left-container">
+          <div id="schedule">
+            <div id="wake-up">
+              <div id="sun"><span>&#9728;</span></div>
+              <div id="wake-up-time-text">Set wake up time</div>
+              <div class="dropdown towards-right" data-toggle="dropdown">
+                <button
+                  id="wake-up-time-text-btn"
+                  class="btn dropdown-toggle button-width"
+                >
+                  6 AM - 7 AM
+                </button>
+                <div class="dropdown-menu">
+                  <a
+                    href="#"
+                    onclick='wakeUp("5 AM - 6 AM")'
+                    class="dropdown-item"
+                    >5 AM - 6 AM</a
+                  >
+                  <a
+                    href="#"
+                    onclick='wakeUp("6 AM - 7 AM")'
+                    class="dropdown-item"
+                    >6 AM - 7 AM</a
+                  >
+                  <a
+                    href="#"
+                    onclick='wakeUp("7 AM - 8 AM")'
+                    class="dropdown-item"
+                    >7 AM - 8 AM</a
+                  >
+                  <a
+                    href="#"
+                    onclick='wakeUp("8 AM - 9 AM")'
+                    class="dropdown-item"
+                    >8 AM - 9 AM</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="vl"></div>
+            <div id="lunch">
+              <div id="lunch-icon"><i class="fas fa-utensils"></i></div>
+              <div id="lunch-time-text">Set lunch time</div>
+              <div class="dropdown towards-right" data-toggle="dropdown">
+                <button
+                  id="lunch-time-text-btn"
+                  class="btn dropdown-toggle button-width"
+                >
+                  11 AM - 12 AM
+                </button>
+                <div class="dropdown-menu">
+                  <a
+                    href="#"
+                    onclick='lunch("11 AM - 12 AM")'
+                    class="dropdown-item"
+                    >11 AM - 12 AM</a
+                  >
+                  <a
+                    href="#"
+                    onclick='lunch("12 AM - 1 PM")'
+                    class="dropdown-item"
+                    >12 AM - 1 PM</a
+                  >
+                  <a
+                    href="#"
+                    onclick='lunch("1 PM - 2 PM")'
+                    class="dropdown-item"
+                    >1 PM - 2 PM</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="vl"></div>
+            <div id="nap">
+              <div id="nap-icon"><i class="fa fa-bed"></i></div>
+              <div id="nap-text">Set nap time</div>
+              <div class="dropdown towards-right" data-toggle="dropdown">
+                <button
+                  id="nap-time-text-btn"
+                  class="btn dropdown-toggle button-width"
+                >
+                  9 PM - 10 PM
+                </button>
+                <div class="dropdown-menu">
+                  <a
+                    href="#"
+                    onclick='nap("9 PM - 10 PM")'
+                    class="dropdown-item"
+                    >9 PM - 10 PM</a
+                  >
+                  <a
+                    href="#"
+                    onclick='nap("10 PM - 11 PM")'
+                    class="dropdown-item"
+                    >10 PM - 11 PM</a
+                  >
+                  <a
+                    href="#"
+                    onclick='nap("11 PM - 12 PM")'
+                    class="dropdown-item"
+                    >11 PM - 12 PM</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="wish">GOOD AFTERNOON !!</div>
+          <div id="party">Party Time!</div>
+        </div>
+        <div id="right-container"></div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./clock.js" async defer></script>
+  </body>
+</html>

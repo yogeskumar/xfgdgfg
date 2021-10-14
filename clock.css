@@ -1,0 +1,430 @@
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  background-color: rgb(70, 0, 136);
+}
+
+#clock-logo {
+  width: 48%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#logo {
+  font-size: 70px;
+  color: rgb(230, 0, 230);
+}
+
+#clock-text {
+  color: white;
+  font-size: 40px;
+  margin: auto;
+  margin-left: 3px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#clock {
+  display: flex;
+  /* width: 48%; */
+  width: 450px;
+  /* max-width: 450px; */
+  /* min-width: 350px; */
+  height: 80px;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+}
+
+#text-time {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: auto;
+}
+
+#hr {
+  font-size: medium;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background-color: rgb(241, 227, 255);
+  text-align: center;
+  border-radius: 2px;
+  color: rgb(151, 39, 255);
+  font-weight: 900;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#thr {
+  margin: auto;
+  margin-top: 10px;
+}
+
+#tmin {
+  margin: auto;
+  margin-top: 10px;
+}
+
+#tsec {
+  margin: auto;
+  margin-top: 10px;
+}
+
+#colon {
+  font-size: 45px;
+  margin: auto;
+  margin-top: 0px;
+}
+
+#min {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background-color: rgb(241, 227, 255);
+  text-align: center;
+  border-radius: 2px;
+  color: rgb(151, 39, 255);
+  font-weight: 900;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#sec {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background-color: rgb(241, 227, 255);
+  text-align: center;
+  border-radius: 2px;
+  color: rgb(151, 39, 255);
+  font-weight: 900;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#am-pm {
+  display: flex;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background-image: linear-gradient(blueviolet, violet);
+  text-align: center;
+  border-radius: 2px;
+  color: rgb(255, 255, 255);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#inner-am-pm {
+  margin: auto;
+}
+
+#schedule {
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  padding-top: 8px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#wake-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#sun {
+  border-radius: 15px;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+}
+
+#wake-up-time-text {
+  font-weight: 500;
+  float: left;
+  margin-left: 25px;
+  color: rgb(93, 0, 180);
+}
+
+/* .wake-up-time-text {
+  margin-left: 10px;
+  min-width: fit-content;
+  white-space: nowrap;
+  text-overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+} */
+
+.towards-right {
+  float: right;
+  margin-right: 15px;
+  border: 2px solid rgb(207, 207, 207);
+  border-radius: 5px;
+  color: blueviolet;
+}
+
+.button-width {
+  width: 150px;
+}
+
+.vl {
+  display: block;
+  background-color: rgb(194, 191, 191);
+  margin: 8px 0px 8px 23px;
+  width: 2px;
+  height: 30px;
+  float: left;
+}
+
+#lunch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#lunch-icon {
+  border-radius: 15px;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  margin-left: 8px;
+}
+
+#lunch-time-text {
+  font-weight: 500;
+  float: left;
+  margin-left: 19px;
+  color: rgb(93, 0, 180);
+}
+
+#nap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#nap-icon {
+  border-radius: 15px;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  margin-left: 8px;
+}
+
+#nap-text {
+  font-weight: 500;
+  float: left;
+  color: rgb(93, 0, 180);
+}
+
+#wish {
+  display: flex;
+  margin: auto;
+  margin-top: 15px;
+  padding-left: 10px;
+  font-size: 26px;
+  font-weight: 900;
+  height: 60px;
+  /* line-height: 45px; */
+  width: 100%;
+  color: white;
+  border-radius: 10px;
+  text-align: left;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(114, 40, 184);
+}
+
+/* span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+} */
+
+#party {
+  margin: auto;
+  margin-left: 0px;
+  margin-top: 15px;
+  padding-left: 10px;
+  font-size: 26px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* line-height: 45px; */
+  width: 50%;
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+  /* align-content: center; */
+  text-align: center;
+  background-image: linear-gradient(to right, blueviolet, violet);
+  margin-bottom: 20px;
+}
+a:hover {
+  color: rgb(0, 255, 255) !important;
+  background-color: rgb(212, 249, 250) !important;
+}
+#parent-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#upper-container {
+  width: 100%;
+  /* width: 400px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#lower-container {
+  width: 100%;
+  max-height: 500px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#left-container {
+  min-width: 450px;
+}
+#right-container {
+  background-image: url(./nap_time.png);
+  width: 450px;
+  height: 390px;
+  /* height: 100%;why applying on non-fix height, image/whole div gets invisible */
+  border-radius: 20px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 360px) {
+  #parent-container {
+    width: 360px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #upper-container {
+    margin: auto;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #lower-container {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row; /*it should be column*/
+    /* flex-wrap: nowrap;  on direction row and nowrap, why imagw gets invisible*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #left-container {
+    margin: auto;
+    width: 100%;
+  }
+  #right-container {
+    width: 355px;
+    height: 355px;
+    background-image: url(./nap_time.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+  #clock-logo {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #logo {
+    /* margin: auto; */
+    font-size: 70px;
+    color: rgb(230, 0, 230);
+  }
+
+  #clock-text {
+    /* margin: auto; */
+    color: white;
+    font-size: 60px;
+    margin-left: 5px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  #clock {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+  #schedule {
+    margin: 2px auto;
+    /* width: 355px; */
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #wish {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 36px;
+    font-weight: 900;
+    height: 60px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(114, 40, 184);
+  }
+  #party {
+    margin: auto;
+    margin-top: 15px;
+    font-size: 26px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    width: 50%;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    background-image: linear-gradient(to right, blueviolet, violet);
+    margin-bottom: 20px;
+  }
+}
